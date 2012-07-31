@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.riktamtech.android.chitti"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:icon="@drawable/pa"
+        android:label="@string/app_name" android:debuggable="false">
+        <activity
+            android:name="com.riktamtech.android.chitti.Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.riktamtech.android.chitti.Search_files" />
+        <activity android:name="com.riktamtech.android.chitti.Search_songs" />
+        <activity android:name="com.riktamtech.android.chitti.Message_handling" />
+        <activity android:name="com.riktamtech.android.chitti.Skill_set" />
+    </application>
+
+</manifest>
